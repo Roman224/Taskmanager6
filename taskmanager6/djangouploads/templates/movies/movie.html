@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOVIES</title>
+</head>
+<body>
+<h1>IMAGES LIST ( F R U I T S )</h1>
+{% for i in movie %}
+<p>
+    <a href = "{{movie_id}}">
+    <b style="color: green"> NUME: {{i.name}}</b>
+    <img src="{{i.image.url}}">{{i}}
+    <br>
+    </a>
+</p>
+{% endfor %}
+
+</body>
+</html>
